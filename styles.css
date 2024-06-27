@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    margin: 16px 64px;
+}
+
+header{
+    display: flex;
+    gap: 8px;
+}
+
+a{
+    text-decoration: none;
+}
