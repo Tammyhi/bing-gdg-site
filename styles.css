@@ -5,9 +5,41 @@ body{
 
 header{
     display: flex;
-    gap: 8px;
+    gap: 1em;
+    font-size: 1.5em;
+    align-items: center;
 }
 
 a{
     text-decoration: none;
+}
+
+#header-img{
+    height: 1.5em;
+}
+
+nav a:hover{
+    display: inline flex;
+    transform: scale(1.2);
+    color:darkseagreen;
+}
+
+nav a{
+  font-family: "Inter", sans-serif;
+  margin-right: 1em;
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300; 
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
