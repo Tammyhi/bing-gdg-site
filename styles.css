@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     margin: 16px 64px;
 }
 
@@ -42,4 +43,14 @@ nav a{
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
+}
+
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-size: xx-large;
+    margin-bottom: 0;
+}
+
+#about{
+    max-width: 50%;
 }
