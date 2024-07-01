@@ -54,3 +54,8 @@ h1{
 #about{
     max-width: 50%;
 }
+
+.active{
+    color: blueviolet;
+    font-weight: 500;
+}
