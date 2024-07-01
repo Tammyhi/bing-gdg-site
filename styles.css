@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    margin: 16px 64px;
+    margin: 8vh 20vh;
 }
 
 header{
@@ -59,3 +59,7 @@ h1{
     color: blueviolet;
     font-weight: 500;
 }
+
+/*@media screen and (max-width: 600px){
+    
+}*/
