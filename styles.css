@@ -6,7 +6,7 @@ body{
 
 nav{
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
     font-size: 1.5em;
     align-items: center;
 }
@@ -27,6 +27,7 @@ nav a:hover{
 
 nav a{
   font-family: "Inter", sans-serif;
+  transition: 0.2s ease-in-out;
 }
 
 .archivo-black-regular {
@@ -67,6 +68,18 @@ p{
 
 .members{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#eboard-img{
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
 }
 /*@media screen and (max-width: 600px){
     
