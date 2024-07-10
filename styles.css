@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -53,7 +59,7 @@ h1{
 }
 
 #about{
-    max-width: 50vw;
+    max-width: 45vw;
 }
 
 .active{
@@ -68,18 +74,27 @@ p{
 
 .members{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    gap: 3vh;
+    margin-top: 2vh;
 }
 
 #eboard-img{
-    max-width: 20%;
-    max-height: 20%;
+    width: 100%;
 }
 
 .card{
     display: flex;
     flex-direction: column;
+    max-width: 30%;
+    border: hidden;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 /*@media screen and (max-width: 600px){
     
