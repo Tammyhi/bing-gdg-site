@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --gdg-green: darkseagreen;
+    --gdg-purple: blueviolet;
+}
+
 body{
     display: flex;
     flex-direction: column;
-    margin: 4vh 20vh;
+    margin: 4vh 10vh;
+    font-size: 14pt;
+    font-family: "Inter", sans-serif;
 }
 
 nav{
@@ -17,38 +25,82 @@ nav{
     align-items: center;
 }
 
-a{
-    text-decoration: none;
+.sidebar-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+
+#sidebar-active, .close-sidebar-btn, .open-sidebar-btn{
+    display: none;
+}
+
+@media(max-width: 740px) {
+    .sidebar-links{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        background-color: var(--gdg-green);
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        padding: 20px 30px;
+        justify-content: flex-start;
+        transition: 0.4s ease-in-out;
+    }
+
+    nav a{
+        height: auto;
+        box-sizing: border-box;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .close-sidebar-btn, .open-sidebar-btn{
+        display: block;
+        padding: 20px;
+    }
+
+    #sidebar-active:checked ~ .sidebar-links{
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+nav svg{
+    fill: var(--gdg-purple);
 }
 
 #header-img{
     height: 1.5em;
-}
-
-nav a:hover{
-    display: inline flex;
-    transform: scale(1.2);
-    color:darkseagreen;
+    margin-right: auto;
 }
 
 nav a{
-  font-family: "Inter", sans-serif;
   transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.archivo-black-regular {
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.inter-regular {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300; 
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+nav a:hover{
+    display: inline flex; 
+    transform: scale(1.2);
+    color: var(--gdg-green);
 }
 
 h1{
@@ -63,7 +115,7 @@ h1{
 }
 
 .active{
-    color: blueviolet;
+    color: var(--gdg-purple);
     font-weight: 500;
 }
 
