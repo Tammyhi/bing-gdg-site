@@ -1,10 +1,14 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap');
+
+/* Remove extra default spacing */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* Color Scheme */
 :root{
     --gdg-green: darkseagreen;
     --gdg-purple: blueviolet;
@@ -13,7 +17,7 @@
 body{
     display: flex;
     flex-direction: column;
-    margin: 4vh 10vh;
+    margin: clamp(3vh, 20%, 10vh) clamp(10vw, 15% ,20vw);
     font-size: 14pt;
     font-family: "Inter", sans-serif;
 }
@@ -114,14 +118,18 @@ h1{
     max-width: 45vw;
 }
 
+#aboutSum{
+    display: flex;
+}
+
 .active{
     color: var(--gdg-purple);
     font-weight: 500;
 }
 
 p{
-    margin-top: 0.5vh;
-    margin-bottom: 0;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .members{
@@ -129,7 +137,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3vh;
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 
 #eboard-img{
@@ -147,6 +155,11 @@ p{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+footer{
+    margin-top: 3vh;
+    text-align: center;
 }
 /*@media screen and (max-width: 600px){
     
