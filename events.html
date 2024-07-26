@@ -55,11 +55,16 @@
 
     <!-- Content Sections -->
     <section>
-      <h2>Workshops</h2>
+      <h1>Workshop</h1>
+      <p>Workshops are hecking cool</p>
+      <h2>Workshop Recordings</h2>
       <p>Upcoming Workshops</p>
-      <h3>Fall 2024 Recordings</h3>
-      <h3>Spring 2024 Recordings</h3>
-      <iframe
+      <div class="collapsible"><h3>Fall 2024 Recordings</h3></div>
+      <div class="collapsible-content"><p>Nothing here yet!</p></div>
+      <div class="collapsible"><h3>Fall '23 - Spring '24</h3></div>
+      <div class="collapsible-content">
+        <h3>Spring 2024</h3>
+        <iframe
         width="560"
         height="315"
         src="https://www.youtube.com/embed/videoseries?si=gNh8gK13W_Sf9Fw6&amp;list=PL2uMaN6e3IFgTDt5t3iVybZts3Hu7eFGX"
@@ -69,7 +74,7 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-      <h3>Fall 2023 Recordings</h3>
+      <h3>Fall 2023</h3>
       <iframe
         width="560"
         height="315"
@@ -80,25 +85,26 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
+      </div>
+      
     </section>
 
     <section>
       <h2>Game Jams</h2>
-      <div class="collapsible">
-        <input type="checkbox" id="collapsible-head"/>
-        <label for="collapsible-head"><h3>Fall '23 - Spring '24</h3></label>
-        <div class="collapsible-text">
+        <div class="collapsible"><h3>Fall '23 - Spring '24</h3></div>
+        <div class="collapsible-content">
           <h4>Spring 2024 Game Jam</h4>
           <a>Itchio</a>
           <h4>Fall 2023 Game Jam</h4>
           <a>Itchio</a>
         </div>
-      </div>
+    
     </section>
 
     <section>
       <h2>Competitions</h2>
       <p>Coming soon...</p>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
