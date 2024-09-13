@@ -94,6 +94,11 @@ section {
     background-color: #f1f1f1;
 }
 
+/* Hide elements initially */
+#sidebar-active, .close-sidebar-btn, .open-sidebar-btn {
+    display: none;
+}
+
 /* Responsive Sidebar for Small Screens */
 @media (max-width: 740px) {
     .sidebar-links {
@@ -136,11 +141,6 @@ section {
         left: 0;
         z-index: 9;
     }
-}
-
-/* Hide elements initially */
-#sidebar-active, .close-sidebar-btn, .open-sidebar-btn {
-    display: none;
 }
 
 /* Headings Styling */
