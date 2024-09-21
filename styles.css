@@ -10,8 +10,8 @@
 
 /* Color Scheme */
 :root {
-    --gdg-green: darkseagreen;
-    --gdg-purple: blueviolet;
+    --gdg-green: #8fbc8f;
+    --gdg-purple: #8a2be2;
 }
 
 /* General Body Styling */
@@ -110,7 +110,7 @@ section {
         z-index: 10;
         width: 300px;
         height: 100%;
-        background-color: var(--gdg-green);
+        background-color: #f1f1f1;
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
         padding: 20px 30px;
         justify-content: flex-start;
