@@ -178,6 +178,12 @@ p {
     margin-bottom: 1vh;
 }
 
+/* Link Styling */
+.collapsible-content a {
+    margin: 5px 0;
+    display: block;
+}
+
 /* Members Section Styling */
 .members {
     display: flex;
