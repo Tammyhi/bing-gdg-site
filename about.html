@@ -1,123 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d6f5b3e8a3.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>GDG Home</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <img id="header-img" src="images/logo.svg" />
-        <input type="checkbox" id="sidebar-active" />
-        <label for="sidebar-active" class="open-sidebar-btn">
-          <i class="fa-solid fa-bars"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d6f5b3e8a3.js" crossorigin="anonymous"></script>
+  <title>About GDG</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img id="header-img" src="images/logo.svg" />
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="sidebar-links">
+        <label for="sidebar-active" class="close-sidebar-btn">
+          <i class="fa-solid fa-x"></i>
         </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="sidebar-links">
-          <label for="sidebar-active" class="close-sidebar-btn">
-            <i class="fa-solid fa-x"></i>
-          </label>
-          <!--<a href="home.html">Home</a>-->
-          <a href="about.html" class="active">About</a>
-          <a href="events.html">Events</a>
-        </div>
-      </nav>
-    </header>
-    <section id="aboutSum">
-      <div>
-        <h1>About Us</h1>
-        <p id="about">
-          <!-- bruh spacing off cus of emojis lmaoo-->
-          🎮✨ Founded in 2023, we're the first-ever game development club here,
-          proudly part of the Video Game Association. Whether you're a newbie or
-          a seasoned coder, our events are designed to spark creativity and
-          boost your skills in a fun, supportive environment.
-        </p>
-        <p id="about">
-          Join us to collaborate with fellow enthusiasts, learn the latest in
-          game development, and create amazing games together. Come for the games, stay for the community! 🚀🕹️
-        </p>
-        <p id="about">
-          Note: We are a sub-group of the Video Game Association and not
-          officially chartered yet. Fingers crossed for this academic year!
-        </p>
-        <div class="club-socials">
-          <a><i class="fa-brands fa-instagram"></i></a>
-          <a><i class="fa-brands fa-youtube"></i></a>
-          <a><i class="fa-brands fa-discord"></i></a>
-        </div>
+        <!--<a href="home.html">Home</a>-->
+        <a href="about.html" class="active">About</a>
+        <a href="events.html">Events</a>
       </div>
-      <img
-        id="about"
-        src="https://www.vanas.ca/images/blog/best-video-game-engines-vanas.jpg"
-      />
-    </section>
-    <section>
-      <h1>Executive Board</h1>
-      <p>
-        Meet our awesome Eboard! 🎉 We're the friendly faces behind the Game
-        Development Group, here to make sure you have a fantastic time learning
-        and creating.
+    </nav>
+  </header>
+  <section id="aboutSum">
+    <div>
+      <h1>About Us</h1>
+      <p id="about">
+        Founded in 2023 as a sub-group of the Video Game Association, we're the first-ever game development club at Binghamton University. Whether you're a newbie or
+        a seasoned coder, our events are designed to spark creativity and
+        boost your skills in a fun, supportive environment.
       </p>
-      <div class="members">
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg" />
-          <p>Pavel</p>
-          <p>President</p>
-          <p>CS '27</p>
-        </div>
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg" />
-          <p>Tammy</p>
-          <p>Vice President</p>
-          <p>CS '27</p>
-        </div>
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg" />
-          <p>Evan</p>
-          <p>Godot Workshop Coordinator</p>
-          <p>Urban Planning '27</p>
-        </div>
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg" />
-          <p>Elijah</p>
-          <p>Graphic Designer</p>
-          <p>Graphics '27</p>
-        </div>
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg" />
-          <p>Daniel</p>
-          <p>Unreal Workshop Coordinator</p>
-          <p>CS '28</p>
-        </div>
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg" />
-          <p>Andrii</p>
-          <p>Blender Workshop Coordinator</p>
-          <p>CS '28</p>
-        </div>
-        <div class="card">
-          <img id="eboard-img" src="images/logo.svg"/>
-          <p>Hewitt</p>
-          <p>Game Jam Coordinator</p>
-          <p>CS '28</p>
-        </div>
+      <p id="about">
+        Join us to collaborate with fellow enthusiasts, learn the latest in
+        game development, and create amazing games together. Come for the games, stay for the community!
+      </p>
+      <div class="club-socials">
+        <a href="https://www.instagram.com/binghamton_gdg/?utm_source=ig_web_button_share_sheet"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@Binghamton_VGA"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://discord.gg/2tCEp3Rb7Q""><i class=" fa-brands fa-discord"></i></a>
+        <a href="mailto:binghamtongdg@gmail.com"><i class="fa-solid fa-envelope"></i></a>
       </div>
-    </section>
-    <footer>
-      <p>Made by Tammy 🙂, 2023 - 2024</p>
-    </footer>
-  </body>
+    </div>
+    <img id="about" src="images/tableBanner.png" />
+  </section>
+  <section>
+    <h1>Executive Board</h1>
+    <p>
+      Meet the friendly faces behind the Game
+      Development Group!
+    </p>
+    <div class="members">
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Pavel</p>
+        <p>President</p>
+        <p>CS '27</p>
+      </div>
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Tammy</p>
+        <p>Vice President</p>
+        <p>CS '27</p>
+      </div>
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Evan</p>
+        <p>Godot Workshop Coordinator</p>
+        <p>Urban Planning '27</p>
+      </div>
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Elijah</p>
+        <p>Graphic Designer</p>
+        <p>Graphics '27</p>
+      </div>
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Daniel</p>
+        <p>Unreal Workshop Coordinator</p>
+        <p>CS '28</p>
+      </div>
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Andrii</p>
+        <p>Blender Workshop Coordinator</p>
+        <p>CS '28</p>
+      </div>
+      <div class="card">
+        <img id="eboard-img" src="images/logo.svg" />
+        <p>Hewitt</p>
+        <p>Game Jam Coordinator</p>
+        <p>CS '28</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Made by Tammy 🙂, 2023 - 2024</p>
+  </footer>
+</body>
+
 </html>
