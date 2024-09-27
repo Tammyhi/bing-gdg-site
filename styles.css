@@ -198,6 +198,10 @@ p {
     width: 100%;
 }
 
+#jam-img {
+    width: 45%;
+}
+
 /* Card Styling */
 .card {
     display: flex;
